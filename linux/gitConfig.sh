@@ -8,7 +8,7 @@ eval "$(ssh-agent -s)"
 
 ssh-add ~/.ssh/id_rsa
 
-xclip -selection clipboard < ~/.ssh/id_rsa.pub
+xclip -selection clipboard <~/.ssh/id_rsa.pub
 
 read -p "Enter name for git global config: " name
 
@@ -18,4 +18,3 @@ git config --global core.editor vim
 
 echo "vim is default git editor now"
 echo "Public key has been copied to clipboard"
-

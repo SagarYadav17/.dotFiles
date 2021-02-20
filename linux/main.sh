@@ -1,7 +1,7 @@
 #!/bin/bash
 
-if [ "$EUID" -ne 0 ]
-	then echo "Please run as root"
+if [ "$EUID" -ne 0 ]; then
+	echo "Please run as root"
 	exit
 fi
 
@@ -15,4 +15,3 @@ sudo apt install zsh -f
 chsh -s /usr/bin/zsh root
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
